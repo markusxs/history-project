@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Республика Карелия</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="modal" onclick="this.style.display='none'">
+            <img id="modal-img" src="" alt="Full size">
+        </div>
+
+        <div class="main-wrapper">
+            <div class="map-section">
+                <div id="map-container">
+                    <div class="city-point" style="top: 50%; left: 52%;" title="Сегежа" onclick="showInfo('segezha')"></div>
+                    <div class="city-point" style="top: 81%; left: 52%;" title="Петрозаводск" onclick="showInfo('petrozavodsk')"></div>
+                    <div class="city-point" style="top: 82%; left: 18%;" title="Сортавала" onclick="showInfo('sortavala')"></div>
+                    <div class="city-point" style="top: 74%; left: 51%;" title="Кондопога" onclick="showInfo('kondopoga')"></div>
+                    <div class="city-point" style="top: 30%; left: 55%;" title="Кемь" onclick="showInfo('kem')"></div>
+                    <div class="city-point" style="top: 36%; left: 17%;" title="Костомукша" onclick="showInfo('kostom')"></div>
+                    <div class="city-point" style="top: 37%; left: 56%;" title="Беломорск" onclick="showInfo('belomorsk')"></div>
+                    <div class="city-point" style="top: 25%; left: 23%;" title="Калевала" onclick="showInfo('kalevala')"></div>
+                    <div class="city-point" style="top: 85%; left: 13%;" title="Лахденпохья" onclick="showInfo('lahden')"></div>
+                    <div class="city-point" style="top: 12%; left: 40%;" title="Лоухи" onclick="showInfo('louhi')"></div>
+                    <div class="city-point" style="top: 62%; left: 53%;" title="Медвежьегорск" onclick="showInfo('medvezh')"></div>
+                    <div class="city-point" style="top: 45%; left: 30%;" title="Муезерский" onclick="showInfo('muezer')"></div>
+                    <div class="city-point" style="top: 93%; left: 39%;" title="Олонец" onclick="showInfo('olonec')"></div>
+                    <div class="city-point" style="top: 84%; left: 25%;" title="Питкяранта" onclick="showInfo('pitcyar')"></div>
+                    <div class="city-point" style="top: 82%; left: 45%;" title="Пряжа" onclick="showInfo('pryazha')"></div>
+                    <div class="city-point" style="top: 80%; left: 73%;" title="Пудож" onclick="showInfo('pydozh')"></div>
+                    <div class="city-point" style="top: 76%; left: 33%;" title="Суоярви" onclick="showInfo('syoyarvi')"></div>
+                    <div class="map-number" style="top: 3%; left: 80%;" onclick="showSimpleText('murmansk')">1</div>
+                    <div class="map-number" style="top: 55%; left: 82%;" onclick="showSimpleText('archangelsk')">2</div>
+                    <div class="map-number" style="top: 90%; left: 75%;" onclick="showSimpleText('vologda')">3</div>
+                    <div class="map-number" style="top: 93%; left: 50%;" onclick="showSimpleText('spb')">4</div>
+                    <div class="map-number" style="top: 93%; left: 5%;" onclick="showSimpleText('spb')">4</div>
+                    <div class="map-number" style="top: 63%; left: 10%;" onclick="showSimpleText('finland')">5</div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h1 id="info-title">Республика Карелия</h1>
+                <div id="info-box">
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./data.js"></script>
+        <script src="./script.js"></script>
+
+
+    </body>
+</html>
